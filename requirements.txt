@@ -1,9 +1,14 @@
+# Add system setup command
+--extra-index-url https://www.piwheels.org/simple
+numpy==1.26.0
+Pillow==10.0.1
+ultralytics==8.0.134
 fastapi==0.95.1
 uvicorn[standard]==0.21.1
 python-dotenv==1.0.0
 cloudinary==1.31.0
 requests==2.31.0
-numpy==1.26.0
-Pillow==10.0.1
-ultralytics==8.0.134
 pydantic==1.10.9
+
+# Install system dependencies
+!apt-get update && apt-get install -y libgl1 libglib2.0-0
